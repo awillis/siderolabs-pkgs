@@ -72,10 +72,10 @@ vars:
   ipxe_sha256: 55b19ba8972019f1286baa82643de9f0904838fe1491996a91a97748ef04f7ea
   ipxe_sha512: 51f111f5e18c18194c0ad44debebb45e0d5f18efcbc1aef9e03cfa849d122bee439c237d85a8f94299b39453f7cba52b3aab1217d2f39fafe7576352d7050710
 
-  # renovate: datasource=git-tags extractVersion=^v(?<version>.*)$ depName=git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
-  linux_version: 6.6.62
-  linux_sha256: e2c35611775534941b9d4dd871f3ae5b988b6594dc9033b5ca784366e07d9336
-  linux_sha512: 9b49ff136afe1044ed29b776246d91fbbc9976629f3dd30bd0ee233664db10c35cd1791fc1c82c0d9b2db8829e562c547db43da60a6de962100f2a0dbdbbd00c
+  # renovate: datasource=git-refs versioning=git depName=https://github.com/raspberrypi/linux.git
+  linux_ref: e442e5c1ab6bff5b5460b4fc949beb72aaf77970
+  linux_sha256: ab82af6274dfa46cba98dc2e9a81d2bf3d07b8743d7a37a6afe065c362c85851
+  linux_sha512: a504dee5c459fe5318e4e462e20f8e218c359caf1cc5b5f3bb4bc7746fdc1d312753ef737b5f2902f604debb6cdd9793ed62518095669a0bc8c81c16b4f6f7d9
 
   # renovate: datasource=git-tags extractVersion=^v(?<version>.*)$ depName=git://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git
   kmod_version: 33
