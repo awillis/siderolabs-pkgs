@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 6.6.62 Kernel Configuration
+# Linux/x86 6.6.63 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (GCC) 14.2.0"
 CONFIG_CC_IS_GCC=y
@@ -2094,6 +2094,7 @@ CONFIG_NVME_TARGET_AUTH=y
 #
 # Misc devices
 #
+# CONFIG_RP1_PIO is not set
 # CONFIG_AD525X_DPOT is not set
 # CONFIG_DUMMY_IRQ is not set
 # CONFIG_IBM_ASM is not set
@@ -3140,6 +3141,7 @@ CONFIG_HYPERV_KEYBOARD=y
 #
 # Character devices
 #
+# CONFIG_BRCM_CHAR_DRIVERS is not set
 CONFIG_TTY=y
 CONFIG_VT=y
 CONFIG_CONSOLE_TRANSLATIONS=y
@@ -3259,6 +3261,7 @@ CONFIG_TCG_CRB=y
 # CONFIG_TELCLOCK is not set
 # CONFIG_XILLYBUS is not set
 # CONFIG_XILLYUSB is not set
+# CONFIG_RASPBERRYPI_GPIOMEM is not set
 # end of Character devices
 
 #
@@ -3742,6 +3745,7 @@ CONFIG_LPC_ICH=m
 # CONFIG_MFD_RETU is not set
 # CONFIG_MFD_PCF50633 is not set
 # CONFIG_MFD_SY7636A is not set
+# CONFIG_MFD_RASPBERRYPI_POE_HAT is not set
 # CONFIG_MFD_RDC321X is not set
 # CONFIG_MFD_RT4831 is not set
 # CONFIG_MFD_RT5033 is not set
@@ -3775,6 +3779,7 @@ CONFIG_LPC_ICH=m
 # CONFIG_MFD_WM8350_I2C is not set
 # CONFIG_MFD_WM8994 is not set
 # CONFIG_MFD_ATC260X_I2C is not set
+# CONFIG_MFD_RP1 is not set
 # end of Multifunction device drivers
 
 CONFIG_REGULATOR=y
@@ -3813,6 +3818,7 @@ CONFIG_REGULATOR_MP8859=y
 # CONFIG_REGULATOR_PV88090 is not set
 CONFIG_REGULATOR_PWM=y
 # CONFIG_REGULATOR_RAA215300 is not set
+# CONFIG_REGULATOR_RASPBERRYPI_TOUCHSCREEN_V2 is not set
 # CONFIG_REGULATOR_RT4801 is not set
 # CONFIG_REGULATOR_RT4803 is not set
 # CONFIG_REGULATOR_RT5190A is not set
@@ -3962,6 +3968,12 @@ CONFIG_V4L_MEM2MEM_DRIVERS=y
 #
 
 #
+# Raspberry Pi media platform drivers
+#
+# CONFIG_VIDEO_RASPBERRYPI_PISP_BE is not set
+# CONFIG_VIDEO_RP1_CFE is not set
+
+#
 # Renesas media platform drivers
 #
 
@@ -4012,6 +4024,7 @@ CONFIG_VIDEOBUF2_VMALLOC=m
 # Lens drivers
 #
 # CONFIG_VIDEO_AK7375 is not set
+# CONFIG_VIDEO_BU64754 is not set
 # CONFIG_VIDEO_DW9714 is not set
 # CONFIG_VIDEO_DW9719 is not set
 # CONFIG_VIDEO_DW9768 is not set
@@ -4073,6 +4086,7 @@ CONFIG_VIDEOBUF2_VMALLOC=m
 # CONFIG_VIDEO_TW9903 is not set
 # CONFIG_VIDEO_TW9906 is not set
 # CONFIG_VIDEO_TW9910 is not set
+# CONFIG_VIDEO_IRS1125 is not set
 # CONFIG_VIDEO_VPX3220 is not set
 
 #
@@ -4260,6 +4274,7 @@ CONFIG_DRM_PANEL=y
 # Display Panels
 #
 # CONFIG_DRM_PANEL_RASPBERRYPI_TOUCHSCREEN is not set
+# CONFIG_DRM_PANEL_WAVESHARE_TOUCHSCREEN is not set
 # end of Display Panels
 
 CONFIG_DRM_BRIDGE=y
@@ -4334,6 +4349,7 @@ CONFIG_XEN_FBDEV_FRONTEND=y
 CONFIG_FB_HYPERV=y
 # CONFIG_FB_SIMPLE is not set
 # CONFIG_FB_SM712 is not set
+# CONFIG_FB_RPISENSE is not set
 CONFIG_FB_CORE=y
 CONFIG_FB_NOTIFY=y
 # CONFIG_FIRMWARE_EDID is not set
@@ -4841,11 +4857,13 @@ CONFIG_LEDS_TRIGGERS=y
 #
 # CONFIG_LEDS_TRIGGER_TRANSIENT is not set
 # CONFIG_LEDS_TRIGGER_CAMERA is not set
+# CONFIG_LEDS_TRIGGER_INPUT is not set
 # CONFIG_LEDS_TRIGGER_PANIC is not set
 # CONFIG_LEDS_TRIGGER_NETDEV is not set
 # CONFIG_LEDS_TRIGGER_PATTERN is not set
 # CONFIG_LEDS_TRIGGER_AUDIO is not set
 # CONFIG_LEDS_TRIGGER_TTY is not set
+# CONFIG_LEDS_TRIGGER_ACTPWR is not set
 
 #
 # Simple LED drivers
@@ -5225,6 +5243,7 @@ CONFIG_HAVE_CLK=y
 CONFIG_HAVE_CLK_PREPARE=y
 CONFIG_COMMON_CLK=y
 # CONFIG_COMMON_CLK_MAX9485 is not set
+# CONFIG_COMMON_CLK_RP1 is not set
 # CONFIG_COMMON_CLK_SI5341 is not set
 # CONFIG_COMMON_CLK_SI5351 is not set
 # CONFIG_COMMON_CLK_SI544 is not set
